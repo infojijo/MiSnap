@@ -1,0 +1,51 @@
+buildscript {
+    apply from: 'versions.gradle'
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url = uri("https://storage.googleapis.com/r8-releases/raw")
+        }
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:$agpVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlinVersion"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:$dokkaVersion"
+        classpath "org.jetbrains.dokka:versioning-plugin:$dokkaVersion"
+        classpath "org.jetbrains.kotlinx:binary-compatibility-validator:$apiValidatorVersion"
+        classpath "org.jacoco:org.jacoco.core:$jacocoVersion"
+        classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$detektVersion"
+        classpath("com.android.tools:r8:$r8Version") //Using R8/D8 from AGP 8.0.2+ that fixes the bug https://issuetracker.google.com/issues/342522142 only needed if using AGP < 8.0.1
+//        classpath 'net.sf.proguard:proguard-gradle:6.2.2' //TODO: add dependency on Proguard 6.2 for it to work when R8 is disabled in documentation
+//        classpath 'com.guardsquare:proguard-gradle:7.1.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri('https://maven.pkg.github.com/mitek-systems/misnap-android')
+            credentials {
+                username = "infojijo"
+                password = "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"
+            }
+        }
+        mavenLocal()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+    delete files("${project.rootDir}/.detekt/reports")
+    delete files("${project.rootDir}/.lint/reports")
+}
+
+
+
+

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region GENERAL -->
+    <string name="misnapSampleAppLicense" translatable="false">eyJzaWduYXR1cmUiOiIwUVlVY2l5am9NeWs1MVRBYkZTNDBENmVpbEs1cXFiaEFjdUUyWUF6THl0R2VPMHNjUE9hajlXSVA1UWtLajNBWlRWT1ZMUEZLWU03YzlzNHJwbDdGSG1YZWhwOGhPSFNZK3VaWXJhdk1xWGJZZVRveDlFaDJUNXZ0TkxaOExZRVgxWnFVSGpVclpGd1MvbTdtYjlYODFPTU5PLzAyVU9lNk5vUVlSU2tWVldLcFhEMEpRTmJqVHJzRUhUWCthQjNNM0xEUkh6Z2hwRmNyT1lBSjByY1Z4WmoxWG4vdkdCT2d4UGxadW9HNjUwRUVKc2F5Sk1NaXB1SlJOeDE3OWJBNGZmQTgzZi9INzcrcmNwZnNHUkNzR3M4azFOWGFqbVpidUdxS0g2cEpOeEYvMG5MTDNJYmVmQmV3ZDJJdCsvOGJNdzV4OWJ1ODRkb3V6UUJtNnA5VHc9PSIsInNpZ25lZCI6eyJleHBpcnkiOiIyMDMzLTAxLTAxIiwiZmVhdHVyZXMiOlsiYmFyY29kZSIsImRlcG9zaXQiLCJmYWNlIiwiZ2VuZXJpYyIsImlkIiwibmZjIiwib2RjIiwib2RlIiwidm9pY2UiLCJlbSJdLCJhcHBsaWNhdGlvbklkZW50aWZpZXIiOnsiYW5kcm9pZCI6WyJjb20ubWl0ZWtzeXN0ZW1zLm1pc25hcC5zYW1wbGVhcHAiXX0sImdwbyI6IjE2ZCIsIm9yZ2FuaXphdGlvbiI6Ik1pdGVrIFN5c3RlbXMgSW5jLiIsInZlcnNpb24iOiIxLjAifX0=
+</string>
+    <string name="misnapSampleAppName" translatable="false">MiSnap Sample App</string>
+
+    <!-- endregion -->
+
+    <!-- region FRAGMENT LABELS -->
+
+    <string name="misnapSampleAppDemoFragmentLabel" translatable="false">Demo Fragment</string>
+    <string name="misnapSampleAppResultsFragmentLabel" translatable="false">Results Fragment</string>
+    <string name="misnapSampleAppSettingsFragmentLabel" translatable="false">Settings Screen</string>
+
+    <!-- endregion -->
+
+
+    <!-- region DEMO FRAGMENT -->
+
+    <string name="misnapSampleAppDemoStartIdFrontSessionButtonLabel" translatable="false">Start ID Front Session</string>
+    <string name="misnapSampleAppDemoStartIdBackSessionButtonLabel" translatable="false">Start ID Back Session</string>
+    <string name="misnapSampleAppDemoStartPassportSessionButtonLabel" translatable="false">Start Passport Session</string>
+    <string name="misnapSampleAppDemoStartCheckFrontSessionButtonLabel" translatable="false">Start Check Front Session</string>
+    <string name="misnapSampleAppDemoStartCheckBackSessionButtonLabel" translatable="false">Start Check Back Session</string>
+    <string name="misnapSampleAppDemoStartBarcodeSessionButtonLabel" translatable="false">Start Barcode Session</string>
+    <string name="misnapSampleAppDemoStartFaceSessionButtonLabel" translatable="false">Start Face Session</string>
+    <string name="misnapSampleAppDemoStartNfcReadingButtonLabel" translatable="false">Start NFC Reading</string>
+    <string name="misnapSampleAppDemoStartVoiceEnrollmentSessionButtonLabel" translatable="false">Start Voice Enrollment Session</string>
+    <string name="misnapSampleAppDemoStartVoiceVerificationSessionButtonLabel" translatable="false">Start Voice Verification Session</string>
+    <string name="misnapSampleAppDemoCombinedFlowsLabel" translatable="false">MiSnap Combined Flows</string>
+    <string name="misnapSampleAppDemoStartNfcCombinedIdReadingButtonLabel" translatable="false">Start ID Session + NFC</string>
+    <string name="misnapSampleAppDemoStartNfcCombinedPassportReadingButtonLabel" translatable="false">Start Passport Session + NFC</string>
+    <string name="misnapSampleAppDemoStartNfcCombinedIdFaceReadingButtonLabel" translatable="false">Start ID Session + NFC + Face</string>
+    <string name="misnapSampleAppDemoStartCombinedCheckReadingButtonLabel" translatable="false">Start Check Session</string>
+    <string name="misnapSampleAppDemoCustomFlowsButtonLabel" translatable="false">Custom Flows</string>
+
+    <string name="misnapSampleAppDemoDocumentFlowsLabel" translatable="false">MiSnap Document Flows</string>
+    <string name="misnapSampleAppDemoFaceFlowsLabel" translatable="false">MiSnap Face Flows</string>
+    <string name="misnapSampleAppDemoNfcFlowsLabel" translatable="false">MiSnap NFC Flows</string>
+    <string name="misnapSampleAppDemoVoiceFlowsLabel" translatable="false">MiSnap Voice Flows</string>
+    <string name="misnapSampleAppDemoCustomLabel" translatable="false">Custom</string>
+
+    <!-- end region -->
+
+    <!-- region SETTINGS FRAGMENT -->
+    <string name="misnapSampleAppSettingsSessionButtonLabel" translatable="false">Start Session</string>
+    <string name="misnapSampleAppSettingsClearDataButtonLabel" translatable="false">Clear Data</string>
+    <string name="misnapSampleAppSettingsWorkflowTabTitle" translatable="false">Workflow</string>
+
+    <!-- General Settings Tab -->
+    <string name="misnapSampleAppSettingsGeneralTabTitle" translatable="false">General</string>
+    <string name="misnapSampleAppSettingsGeneralUseCaseLabel" translatable="false">Use Case</string>
+    <string name="misnapSampleAppSettingsGeneralDeviceOrientationLabel" translatable="false">Device Orientation</string>
+
+    <string-array name="useCasesArray">
+        <item>Passport</item>
+        <item>ID Card Front</item>
+        <item>ID Card Back</item>
+        <item>Check Front</item>
+        <item>Check Back</item>
+        <item>Generic Document</item>
+        <item>Barcode</item>
+        <item>Face</item>
+        <item>NFC</item>
+        <item>Voice</item>
+    </string-array>
+
+    <string-array name="deviceOrientationsArray">
+        <item>Landscape</item>
+        <item>Portrait</item>
+        <item>Unspecified</item>
+    </string-array>
+
+    <!-- Camera Settings Tab -->
+    <string name="misnapSampleAppSettingsCameraTabTitle" translatable="false">Camera</string>
+    <string name="misnapSampleAppSettingsCameraFacingDirectionLabel" translatable="false">Camera Facing Direction</string>
+    <string name="misnapSampleAppSettingsCameraTorchModeLabel" translatable="false">Torch Mode</string>
+    <string name="misnapSampleAppSettingsCameraShouldRecordVideoLabel" translatable="false">Should Record Session</string>
+    <string name="misnapSampleAppSettingsCameraShouldRecordVideoAudioLabel" translatable="false">Should Record Audio</string>
+    <string name="misnapSampleAppSettingsCameraRequestHighResolutionLabel" translatable="false">Request High Resolution</string>
+    <string name="misnapSampleAppSettingsCameraVideoBitrateLabel" translatable="false">Video Bitrate</string>
+    <string name="misnapSampleAppSettingsCameraVideoQualityLabel" translatable="false">Video Quality</string>
+
+    <string-array name="cameraFacingDirectionsArray">
+        <item>Back</item>
+        <item>Front</item>
+    </string-array>
+
+    <string-array name="cameraTorchModesArray">
+        <item>OFF</item>
+        <item>ON</item>
+        <item>AUTO</item>
+    </string-array>
+
+    <string-array name="cameraVideoQualitiesArray">
+        <item>FHD(1080p)</item>
+        <item>HD(720p)</item>
+    </string-array>
+
+    <!-- Document Settings Tab -->
+    <string name="misnapSampleAppSettingsDocumentTabTitle" translatable="false">Document</string>
+    <string name="misnapSampleAppSettingsDocumentTriggerLabel" translatable="false">Trigger</string>
+    <string name="misnapSampleAppSettingsDocumentEnableEnhancedManualLabel" translatable="false">Enable Enhanced Manual</string>
+    <string name="misnapSampleAppSettingsDocumentRequestDocumentExtractionLabel" translatable="false">Request Document Extraction</string>
+    <string name="misnapSampleAppSettingsDocumentRedactOptionalDataLabel" translatable="false">Redact Optional Data</string>
+    <string name="misnapSampleAppSettingsShouldEnableFocusFinalFrame" translatable="false">Enable Focus Before Final Frame</string>
+    <string name="misnapSampleAppSettingsDocumentPrioritizeExtractionOverImageQualityLabel" translatable="false">Prioritize Document Extraction Over Image Quality</string>
+    <string name="misnapSampleAppSettingsDocumentClassificationLabel" translatable="false">Enable Document Classification</string>
+    <string name="misnapSampleAppSettingsDocumentGeographyLabel" translatable="false">Geography</string>
+    <string name="misnapSampleAppSettingsAnalysisDeviceMotionSensitivityLabel" translatable="false">Device Motion Sensitivity</string>
+    <string name="misnapSampleAppSettingsDocumentSessionOrientationLabel" translatable="false">Session Orientation</string>
+    <string name="misnapSampleAppSettingsDocumentCornersConfidenceThreshold" translatable="false">Corner Confidence Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentMinPaddingThreshold" translatable="false">Minimum Padding Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentMinHorizontalFillAlignedThreshold" translatable="false">Minimum Horizontal Fill Aligned Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentMinHorizontalFillUnalignedThreshold" translatable="false">Minimum Horizontal Fill Unaligned Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentMinBrightnessThreshold" translatable="false">Minimum Brightness Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentMaxBrightnessThreshold" translatable="false">Maximum Brightness Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentMinContrastThreshold" translatable="false">Minimum Contrast Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentMinBusyBackgroundThreshold" translatable="false">Minimum Busy Background Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentMaxAngleThreshold" translatable="false">Maximum Angle Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentMinSharpnessThreshold" translatable="false">Minimum Sharpness Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentNoGlareThreshold" translatable="false">Minimum No Glare Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentMrzConfidenceThreshold" translatable="false">Mrz Confidence Threshold</string>
+    <string name="misnapSampleAppSettingsDocumentExtractionTooltip" translatable="false">Used to Return MRZ Extraction. \nCan\'t be used with Barcode Extraction.</string>
+    <string name="misnapSampleAppSettingsDocumentBarcodeExtractionTooltip" translatable="false">Used to Return Barcode Extraction. \nCan\'t be used with Document Extraction.</string>
+    <string name="misnapSampleAppSettingsDocumentGeoTooltip" translatable="false">Only Supported For Checks</string>
+    <string name="misnapSampleAppSettingsDocumentRedactOptionalDataTooltip" translatable="false">Used to redact the BSN out of NLD documents.</string>
+    <string name="misnapSampleAppSettingsDocumentClassificationTooltip" translatable="false">Used to enable document classification.</string>
+    <string name="misnapSampleAppSettingsJpegQualityThreshold" translatable="false">JPEG Quality</string>
+    <string name="misnapSampleAppSettingsDocumentPrioritizeExtractionOverImageQualityTooltip" translatable="false">Only supported when extraction is REQUIRED for supported documents.</string>
+    <string name="misnapSampleAppSettingsDocumentFocusBeforeFinalFrameTooltip" translatable="false">Performs a focus before getting the final frame.</string>
+
+    <string-array name="documentTriggersArray">
+        <item>Auto</item>
+        <item>Manual</item>
+    </string-array>
+
+    <string-array name="documentGeosArray">
+        <item>US</item>
+        <item>Global</item>
+    </string-array>
+
+    <string-array name="deviceMotionSensitivityArray">
+        <item>None</item>
+        <item>Low</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="documentSessionOrientationsArray">
+        <item>Landscape</item>
+        <item>Portrait</item>
+        <item>Device</item>
+    </string-array>
+
+    <string-array name="documentExtractionRequirementsArray">
+        <item>No Extraction</item>
+        <item>Optional Extraction</item>
+        <item>Require Extraction</item>
+    </string-array>
+
+    <!-- Document Workflow Settings Tab -->
+    <string name="misnapSampleAppSettingsDocumentWorkflowTimeoutDurationLabel" translatable="false">Timeout Duration</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowHintDurationLabel" translatable="false">Hint Duration</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowHintInitialDelayLabel" translatable="false">Hint Initial Delay</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowShowBoundingBoxLabel" translatable="false">Show Bounding Box</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowShowGlareBoxLabel" translatable="false">Show Glare Box</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowReviewConditionLabel" translatable="false">Manual Review Condition</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowGuideViewScalePercentageAlignedLabel" translatable="false">GuideView Aligned Scale Percentage</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowGuideViewScalePercentageUnalignedLabel" translatable="false">GuideView Unaligned Scale Percentage</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowShowVignetteLabel" translatable="false">GuideView Show Vignette</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowHintViewShowBackground" translatable="false">HintView Show Background Color</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowSuccessViewShouldVibrateLabel" translatable="false">SuccessView Should Vibrate</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowShowManualButtonLabel" translatable="false">Show Manual Button</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowShowDocumentLabelLabel" translatable="false">Show Document Label</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowShowCancelButtonLabel" translatable="false">Show Cancel Button</string>
+    <string name="misnapSampleAppSettingsDocumentWorkflowShowExitConfirmationDialogButtonLabel" translatable="false">Show Exit Confirmation Dialog</string>
+
+    <string-array name="documentReviewConditionsArray">
+        <item>Always</item>
+        <item>Manual</item>
+        <item>IQA Warnings Only</item>
+        <item>Never</item>
+    </string-array>
+
+    <!-- Barcode Settings Tab -->
+    <string name="misnapSampleAppSettingsBarcodeTabTitle" translatable="false">Barcode</string>
+    <string name="misnapSampleAppSettingsBarcodeTriggerLabel" translatable="false">Trigger</string>
+    <string name="misnapSampleAppSettingsBarcodeScanSpeedLabel" translatable="false">Barcode Scan Speed</string>
+    <string name="misnapSampleAppSettingsBarcodeRequestBarcodeExtractionLabel" translatable="false">Request Barcode Extraction</string>
+    <string name="misnapSampleAppSettingsBarcodeTypeLabel" translatable="false">Barcode Type</string>
+    <string name="misnapSampleAppSettingsBarcodeOrientationLabel" translatable="false">Barcode Orientation</string>
+
+    <string-array name="barcodeTriggerArray">
+        <item>Auto</item>
+        <item>Manual</item>
+    </string-array>
+
+    <string-array name="barcodeTypesArray">
+        <item>Barcode PDF14</item>
+        <item>Barcode Many</item>
+    </string-array>
+
+    <string-array name="barcodeScanSpeedsArray">
+        <item>Fast</item>
+        <item>Medium</item>
+        <item>Slow</item>
+    </string-array>
+
+    <string-array name="barcodeOrientationsArray">
+        <item>Landscape</item>
+        <item>Portrait</item>
+        <item>Device</item>
+    </string-array>
+
+    <string-array name="barcodeExtractionRequirementsArray">
+        <item>No Extraction</item>
+        <item>Optional Extraction</item>
+        <item>Require Extraction</item>
+    </string-array>
+
+    <!-- Barcode Workflow Settings Tab -->
+    <string name="misnapSampleAppSettingsBarcodeWorkflowReviewConditionLabel" translatable="false">Manual Review Condition</string>
+    <string name="misnapSampleAppSettingsBarcodeWorkflowGuideViewAlignedScalePercentageLabel" translatable="false">GuideView Aligned Scale Percentage</string>
+    <string name="misnapSampleAppSettingsBarcodeWorkflowGuideViewUnalignedScalePercentageLabel" translatable="false">GuideView Unaligned Scale Percentage</string>
+    <string name="misnapSampleAppSettingsBarcodeWorkflowShowVignetteLabel" translatable="false">GuideView Show Vignette</string>
+    <string name="misnapSampleAppSettingsBarcodeWorkflowSuccessViewShouldVibrateLabel" translatable="false">SuccessView Should Vibrate</string>
+    <string name="misnapSampleAppSettingsBarcodeWorkflowShowCancelButtonLabel" translatable="false">Show Cancel Button</string>
+    <string name="misnapSampleAppSettingsBarcodeWorkflowShowBarcodeLabelLabel" translatable="false">Show Barcode Label</string>
+
+    <string-array name="barcodeReviewConditionsArray">
+        <item>Always</item>
+        <item>Manual</item>
+        <item>IQA Warnings Only</item>
+        <item>Never</item>
+    </string-array>
+
+    <!-- Face Settings Tab -->
+    <string name="misnapSampleAppSettingsFaceTabTitle" translatable="false">Face</string>
+    <string name="misnapSampleAppSettingsFaceTriggerLabel" translatable="false">Trigger</string>
+    <string name="misnapSampleAppSettingsFaceTriggerDelayLabel" translatable="false">Trigger Delay</string>
+    <string name="misnapSampleAppSettingsFaceMinFillLabel" translatable="false">Min Fill Threshold</string>
+    <string name="misnapSampleAppSettingsFaceMinPaddingLabel" translatable="false">Min Padding Threshold</string>
+    <string name="misnapSampleAppSettingsFaceEyesOpenConfidenceLabel" translatable="false">Eyes Open Confidence Threshold</string>
+    <string name="misnapSampleAppSettingsFaceMaxAngleLabel" translatable="false">Max Angle Threshold</string>
+    <string name="misnapSampleAppSettingsFaceSmileConfidenceLabel" translatable="false">Smile Confidence Threshold</string>
+
+    <string-array name="faceTriggerArray">
+        <item>Auto</item>
+        <item>Auto Smile</item>
+        <item>Manual</item>
+    </string-array>
+
+    <!-- Face Workflow Settings Tab -->
+    <string name="misnapSampleAppSettingsFaceWorkflowTimeoutDurationLabel" translatable="false">Timeout Duration</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowHintDurationLabel" translatable="false">Hint Duration</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowHintInitialDelayLabel" translatable="false">Hint Initial Delay</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowCountdownTimerDurationLabel" translatable="false">Countdown Timer Duration</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowShowBoundingBoxLabel" translatable="false">Show Bounding Box</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowShowCountdownTimerLabel" translatable="false">Show Countdown Timer</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowReviewConditionLabel" translatable="false">Manual Review Condition</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowGuideViewScalePercentageLabel" translatable="false">GuideView Scale Percentage</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowShowVignetteLabel" translatable="false">GuideView Show Vignette</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowChangeGuideViewStateOnFeedbackLabel" translatable="false">Change GuideView State on Feedback</string>
+    <string name="misnapSampelAppSettingsFaceWorkflowHintViewShowBackground" translatable="false">HintView Show Background</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowSuccessViewShouldVibrateLabel" translatable="false">SuccessView Should Vibrate</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowLowLightSensitivityLabel" translatable="false">Low Light Sensitivity</string>
+    <string name="misnapSampleAppSettingsFaceWorkflowShowCancelButtonLabel" translatable="false">Show Cancel Button</string>
+
+    <string-array name="lowLightSensitivitiesArray">
+        <item>None</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="faceReviewConditionsArray">
+        <item>Always</item>
+        <item>Manual</item>
+        <item>IQA Warnings Only</item>
+        <item>Never</item>
+    </string-array>
+
+    <!-- NFC Settings Tab -->
+    <string name="misnapSampleAppSettingsNfcTabTitle" translatable="false">NFC</string>
+    <string name="misnapSampleAppSettingsNfcDoctypeLabel" translatable="false">Document Type</string>
+    <string name="misnapSampleAppSettingsNfcSoundAndVibrationLabel" translatable="false">Sound and Vibration</string>
+    <string name="misnapSampleAppSettingsNfcRedactOptionalDataLabel" translatable="false">Redact Optional Data</string>
+    <string name="misnapSampleAppSettingsNfcSkipProfileImageLabel" translatable="false">Skip Profile Image</string>
+
+    <string-array name="nfcDoctypesArray">
+        <item>Passport</item>
+        <item>ID</item>
+        <item>EU DL</item>
+    </string-array>
+
+    <string-array name="nfcSoundAndVibrationsArray">
+        <item>Off</item>
+        <item>Follow System</item>
+        <item>Vibrate Only</item>
+    </string-array>
+
+    <!-- NFC Workflow Settings Tab -->
+    <string name="misnapSampleAppSettingsNfcWorkflowShowFailoverPopUpLabel" translatable="false">Show Failover Popup</string>
+    <string name="misnapSampleAppSettingsNfcWorkflowSkipVisibilityTimeoutDurationLabel" translatable="false">Skip Visibility Timeout Duration</string>
+
+    <!-- endregion -->
+
+    <!-- Voice Settings Tab -->
+
+    <string name="misnapSampleAppSettingsVoiceTabTitle" translatable="false">Voice</string>
+    <string name="misnapSampleAppSettingsVoiceStepLabel" translatable="false">Step</string>
+    <string name="misnapSampleAppSettingsVoicePhraseLabel" translatable="false">Phrase</string>
+    <string name="misnapSampleAppSettingsVoiceMinSpeechLengthLabel" translatable="false">Min Speech Length</string>
+    <string name="misnapSampleAppSettingsVoiceMinSNRLabel" translatable="false">Min SNR</string>
+    <string name="misnapSampleAppSettingsVoiceMaxSilenceLengthLabel" translatable="false">Max Silence Length</string>
+    <string name="misnapSampleAppSettingsVoiceCustomPhrase" translatable="false"> Custom Phrase</string>
+    <string name="misnapSampleAppSettingsVoiceCustomPhraseErrorEmptyField" translatable="false">This field cannot be empty</string>
+
+    <string-array name="voiceFlowsArray">
+        <item>Enrollment</item>
+        <item>Verification</item>
+    </string-array>
+
+    <!-- endregion -->
+
+    <!-- Voice Workflow Settings Tab -->
+
+    <string name="misnapSampleAppSettingsVoiceWorkflowSessionTimeoutDurationLabel" translatable="false">Session Timeout Duration</string>
+
+    <!-- endregion -->
+
+</resources>

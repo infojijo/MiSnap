@@ -1,0 +1,63 @@
+project.ext {
+    def buildNumber = String.format("%03d", System.getenv().BUILD_NUMBER?.toInteger() ?: 0)
+    def version = "5.6.1"
+
+    misnapVersionCode = Integer.parseInt("${version.replaceAll("\\.", "")}$buildNumber")
+    misnapVersion = "$version"
+
+    targetSdkVersion = 34
+    compileSdkVersion = 34
+    coreMinSdk = 23
+    buildToolsVersion = "34.0.0"
+
+    jdkVersion = JavaVersion.VERSION_1_8
+    ndkVersion = "27.1.12297006"
+
+    agpVersion = '8.1.0'
+    r8Version = '8.2.33'
+
+    // Kotlin
+    kotlinVersion = '1.8.10'
+    kotlinCoroutinesVersion = '1.6.4'
+    kotlinSerializationVersion = '1.5.0'
+
+    // AndroidX
+    appcompatVersion = '1.6.1'
+    cameraxVersion = '1.4.0' //DO NOT update, MiSnap might not be compatible with other versions
+    constraintLayoutVersion = '2.1.4'
+    fragmentVersion = '1.6.2'
+    lifecycleVersion = '2.6.2'
+    navVersion = '2.5.3'
+    viewbindingVersion = '8.1.0'
+
+    // MLKit
+    mlKitFaceVersion = '16.1.7'
+    mlKitTextVersion = '16.0.1'
+
+    // Material Design Components
+    materialDesignVersion = '1.9.0'
+
+    commonsImagingVersion = '1.0-alpha2'
+
+    // NFC
+    jmrtdVersion = '0.7.32' //DO NOT update this until we bump up the min API level to 26
+    scubaSmartCardVersion = '0.0.23'
+
+    // Test
+    androidxTestVersion = '1.5.0'
+    androidxCoreArchTestVersion = '2.2.0'
+    androidxTestExtJunitVersion = '1.1.5'
+    espressoVersion = '3.5.1'
+    junitVersion = '4.13.2'
+    mockitoVersion = '3.12.4'
+    mockkVersion = '1.12.4'
+    robolectricVersion = '4.11.1'
+    uiautomatorVersion = '2.2.0'
+
+    // Tools
+    apiValidatorVersion = '0.13.0'
+    detektVersion = '1.23.3'
+    dokkaVersion = '1.8.10'
+    jacocoVersion = '0.8.7'
+    leakcanaryVersion = '2.12'
+}

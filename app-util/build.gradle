@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace "com.miteksystems.misnap.apputil"
+    compileSdk project.compileSdkVersion
+
+    defaultConfig {
+        minSdk project.coreMinSdk
+        targetSdk project.targetSdkVersion
+
+        buildToolsVersion project.buildToolsVersion
+
+        def versionName = project.misnapVersion
+        buildConfigField("String", "MODULE_NAME", "\"$project.name\"")
+        buildConfigField("String", "MODULE_VERSION", "\"$versionName\"")
+    }
+
+    buildTypes {
+        debug {
+            versionNameSuffix ' debug'
+
+            buildConfigField("String", "MODULE_VERSION", "\"${defaultConfig.versionName}$versionNameSuffix\"")
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
+        viewBinding = true
+        dataBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+    implementation "com.miteksystems.misnap:core:$misnapVersion"
+    implementation "com.miteksystems.misnap:workflow:$misnapVersion"
+
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    api "com.google.android.material:material:$materialDesignVersion"
+    api "androidx.databinding:viewbinding:$viewbindingVersion"
+}
