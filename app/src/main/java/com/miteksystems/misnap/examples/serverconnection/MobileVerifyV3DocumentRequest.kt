@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.miteksystems.misnap.core.MiSnapSettings
 import com.miteksystems.misnap.core.serverconnection.MiSnapTransactionResult
 import com.miteksystems.misnap.core.serverconnection.MobileVerifyV3Request
-import com.miteksystems.misnap.databinding.ExampleActivityIntegrationBinding
+import com.miteksystems.misnap.sampleapp.databinding.ExampleActivityIntegrationBinding
 import com.miteksystems.misnap.workflow.MiSnapFinalResult
 import com.miteksystems.misnap.workflow.MiSnapWorkflowActivity
 import com.miteksystems.misnap.workflow.MiSnapWorkflowStep

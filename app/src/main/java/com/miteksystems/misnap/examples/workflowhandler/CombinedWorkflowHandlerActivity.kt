@@ -6,7 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import com.miteksystems.misnap.R
 import com.miteksystems.misnap.core.MiSnapSettings
-import com.miteksystems.misnap.databinding.ExampleActivityCombinedWorkflowHandlerBinding
+import com.miteksystems.misnap.sampleapp.databinding.ExampleActivityCombinedWorkflowHandlerBinding
 import com.miteksystems.misnap.workflow.MiSnapFinalResult
 import com.miteksystems.misnap.workflow.MiSnapWorkflowError
 import com.miteksystems.misnap.workflow.MiSnapWorkflowStep

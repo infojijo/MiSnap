@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
 import com.miteksystems.misnap.core.MiSnapSettings
-import com.miteksystems.misnap.databinding.ExampleFragmentTransactionBinding
+import com.miteksystems.misnap.sampleapp.databinding.ExampleFragmentTransactionBinding
 import com.miteksystems.misnap.workflow.fragment.DocumentAnalysisFragment
 import com.miteksystems.misnap.workflow.fragment.DocumentAnalysisFragment.ReviewCondition
 import com.miteksystems.misnap.workflow.fragment.HelpFragment

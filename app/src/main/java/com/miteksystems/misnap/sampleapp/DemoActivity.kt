@@ -6,8 +6,6 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.microsoft.appcenter.AppCenter
 import com.microsoft.appcenter.crashes.Crashes
-import com.miteksystems.misnap.BuildConfig
-import com.miteksystems.misnap.R
 
 class DemoActivity : AppCompatActivity(R.layout.activity_demo) {
 

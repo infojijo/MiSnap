@@ -7,7 +7,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.miteksystems.misnap.R
 import com.miteksystems.misnap.core.MiSnapSettings
-import com.miteksystems.misnap.databinding.ExampleActivityIntegrationBinding
+import com.miteksystems.misnap.sampleapp.databinding.ExampleActivityIntegrationBinding
 import com.miteksystems.misnap.nfc.MiSnapNfcReader
 import com.miteksystems.misnap.workflow.MiSnapFinalResult
 import com.miteksystems.misnap.workflow.MiSnapWorkflowActivity

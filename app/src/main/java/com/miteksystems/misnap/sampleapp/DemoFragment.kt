@@ -7,16 +7,16 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.miteksystems.misnap.R
 import com.miteksystems.misnap.camera.requireProfile
 import com.miteksystems.misnap.camera.util.CameraUtil
 import com.miteksystems.misnap.camera.util.CameraUtil.CameraSupportResult
 import com.miteksystems.misnap.core.MiSnapSettings
-import com.miteksystems.misnap.databinding.FragmentDemoBinding
+import com.miteksystems.misnap.sampleapp.databinding.MisnapFragmentDemoBinding
 import com.miteksystems.misnap.face.default
 import com.miteksystems.misnap.sampleapp.results.SampleAppViewModel
 import com.miteksystems.misnap.voice.MicrophoneUtil
@@ -24,11 +24,12 @@ import com.miteksystems.misnap.workflow.MiSnapWorkflowActivity
 import com.miteksystems.misnap.workflow.MiSnapWorkflowStep
 import com.miteksystems.misnap.workflow.util.PermissionsUtil
 import com.miteksystems.misnap.workflow.util.ViewBindingUtil
+import com.miteksystems.misnap.sampleapp.R
 
-class DemoFragment : Fragment(R.layout.fragment_demo) {
+class DemoFragment : Fragment(R.layout.misnap_fragment_demo) {
     private val binding by ViewBindingUtil.viewBinding(
         this,
-        FragmentDemoBinding::bind
+        MisnapFragmentDemoBinding::bind
     )
     private var frontCameraSupportResult: CameraSupportResult.Success? = null
     private var backCameraSupportResult: CameraSupportResult.Success? = null
@@ -152,7 +153,7 @@ class DemoFragment : Fragment(R.layout.fragment_demo) {
             val settings = MiSnapSettings(MiSnapSettings.UseCase.VOICE, license).apply {
                 voice.flow = MiSnapSettings.Voice.Flow.VERIFICATION
                 voice.phrase =
-                    resources.getStringArray(R.array.misnapWorkflowVoicePhraseSelectionFragmentPhrases)
+                    resources.getStringArray(R.array.barcodeExtractionRequirementsArray)
                         .firstOrNull()
             }
 
@@ -262,15 +263,15 @@ class DemoFragment : Fragment(R.layout.fragment_demo) {
 
     private fun getPermissionRationaleTitle(permission: String) =
         when (permission) {
-            Manifest.permission.CAMERA -> R.string.misnapAppUtilCameraPermissionRationaleTitle
-            Manifest.permission.RECORD_AUDIO -> R.string.misnapAppUtilAudioRecordPermissionRationaleTitle
+            Manifest.permission.CAMERA -> com.miteksystems.misnap.apputil.R.string.misnapAppUtilCameraPermissionRationaleTitle
+            Manifest.permission.RECORD_AUDIO -> com.miteksystems.misnap.apputil.R.string.misnapAppUtilAudioRecordPermissionRationaleTitle
             else -> 0
         }
 
     private fun getPermissionRationaleMessage(permission: String) =
         when (permission) {
-            Manifest.permission.CAMERA -> R.string.misnapAppUtilCameraPermissionRationaleMessage
-            Manifest.permission.RECORD_AUDIO -> R.string.misnapAppUtilAudioRecordPermissionRationaleMessage
+            Manifest.permission.CAMERA -> com.miteksystems.misnap.apputil.R.string.misnapAppUtilCameraPermissionRationaleMessage
+            Manifest.permission.RECORD_AUDIO -> com.miteksystems.misnap.apputil.R.string.misnapAppUtilAudioRecordPermissionRationaleMessage
             else -> 0
         }
 
@@ -319,7 +320,7 @@ class DemoFragment : Fragment(R.layout.fragment_demo) {
             MicrophoneUtil.findSupportedMicrophone(requireContext())
 
         if (supportedMicrophoneSupportResult is MicrophoneUtil.MicrophoneSupportResult.Error) {
-            displayError(R.string.misnapAppUtilMicrophoneErrorMessage)
+            displayError(com.miteksystems.misnap.apputil.R.string.misnapAppUtilMicrophoneErrorMessage)
         }
     }
 
@@ -349,7 +350,7 @@ class DemoFragment : Fragment(R.layout.fragment_demo) {
                 }
 
                 is CameraSupportResult.Error -> {
-                    displayError(R.string.misnapAppUtilBackCameraErrorMessage)
+                    displayError(com.miteksystems.misnap.apputil.R.string.misnapAppUtilBackCameraErrorMessage)
                 }
             }
 
@@ -364,7 +365,7 @@ class DemoFragment : Fragment(R.layout.fragment_demo) {
                     }
 
                     is CameraSupportResult.Error -> {
-                        displayError(R.string.misnapAppUtilFrontCameraErrorMessage)
+                        displayError(com.miteksystems.misnap.apputil.R.string.misnapAppUtilFrontCameraErrorMessage)
                     }
                 }
             }

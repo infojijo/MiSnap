@@ -3,9 +3,9 @@ package com.miteksystems.misnap.examples.advanced.screens.replacescreen
 import android.os.Bundle
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import com.miteksystems.misnap.R
+import com.miteksystems.misnap.sampleapp.R
 import com.miteksystems.misnap.core.MiSnapSettings
-import com.miteksystems.misnap.databinding.ExampleReplaceScreenActivityBinding
+import com.miteksystems.misnap.sampleapp.databinding.ExampleReplaceScreenActivityBinding
 import com.miteksystems.misnap.workflow.MiSnapWorkflowActivity
 import com.miteksystems.misnap.workflow.MiSnapWorkflowStep
 

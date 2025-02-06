@@ -3,7 +3,7 @@
 
     <!-- region GENERAL -->
 
-    <string name="misnapAppUtilCameraPermissionRationaleTitle" translatable="false">Permission reason</string>
+    <string  name="misnapAppUtilCameraPermissionRationaleTitle" translatable="false">Permission reason</string>
     <string name="misnapAppUtilCameraPermissionRationaleMessage" translatable="false">Camera access is required to snap a photo</string>
     <string name="misnapAppUtilAudioRecordPermissionRationaleTitle" translatable="false">Permission reason</string>
     <string name="misnapAppUtilAudioRecordPermissionRationaleMessage" translatable="false">Microphone access is required to record your voice</string>

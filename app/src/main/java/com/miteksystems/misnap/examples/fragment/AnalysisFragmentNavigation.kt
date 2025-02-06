@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentContainerView
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModelProvider
-import com.miteksystems.misnap.R
+import com.miteksystems.misnap.sampleapp.R
 import com.miteksystems.misnap.core.MiSnapSettings
 import com.miteksystems.misnap.workflow.MiSnapErrorResult
 import com.miteksystems.misnap.workflow.MiSnapFinalResult

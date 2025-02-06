@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.miteksystems.misnap.R
 import com.miteksystems.misnap.core.MiSnapSettings
-import com.miteksystems.misnap.databinding.ExampleActivityCombinedWorkflowIntegrationBinding
+import com.miteksystems.misnap.sampleapp.databinding.ExampleActivityCombinedWorkflowIntegrationBinding
 import com.miteksystems.misnap.workflow.MiSnapErrorResult
 import com.miteksystems.misnap.workflow.MiSnapFinalResult
 import com.miteksystems.misnap.workflow.MiSnapWorkflowActivity

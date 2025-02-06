@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.miteksystems.misnap.R
-import com.miteksystems.misnap.databinding.ExampleAddScreenCustomFragmentBinding
+import com.miteksystems.misnap.sampleapp.R
+import com.miteksystems.misnap.sampleapp.databinding.ExampleAddScreenCustomFragmentBinding
 import com.miteksystems.misnap.workflow.util.ViewBindingUtil
 
 /**

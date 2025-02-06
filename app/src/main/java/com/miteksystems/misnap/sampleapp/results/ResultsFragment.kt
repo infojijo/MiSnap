@@ -9,11 +9,12 @@ import androidx.navigation.fragment.findNavController
 import com.miteksystems.misnap.workflow.MiSnapFinalResult
 import com.miteksystems.misnap.workflow.MiSnapWorkflowStep
 import com.miteksystems.misnap.workflow.util.ViewBindingUtil
-import com.miteksystems.misnap.R
 import com.miteksystems.misnap.apputil.util.ResultsUtil
 import com.miteksystems.misnap.apputil.databinding.FragmentResultsRootBinding
+import com.miteksystems.misnap.sampleapp.R
 
-class ResultsFragment : Fragment(R.layout.fragment_results_root) {
+
+class ResultsFragment : Fragment(com.miteksystems.misnap.apputil.R.layout.fragment_results_root) {
     private val binding by ViewBindingUtil.viewBinding(
         this,
         FragmentResultsRootBinding::bind

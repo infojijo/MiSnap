@@ -1,6 +1,7 @@
 package com.miteksystems.misnap.sampleapp
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.Context
 import android.content.pm.ActivityInfo
@@ -19,24 +20,23 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.checkbox.MaterialCheckBox
-import com.miteksystems.misnap.R
 import com.miteksystems.misnap.barcode.default
 import com.miteksystems.misnap.barcode.getScanSpeed
 import com.miteksystems.misnap.camera.util.CameraUtil
 import com.miteksystems.misnap.core.MiSnapSettings
-import com.miteksystems.misnap.databinding.BarcodeSettingsBinding
-import com.miteksystems.misnap.databinding.BarcodeWorkflowSettingsBinding
-import com.miteksystems.misnap.databinding.CameraSettingsBinding
-import com.miteksystems.misnap.databinding.DocumentSettingsBinding
-import com.miteksystems.misnap.databinding.DocumentWorkflowSettingsBinding
-import com.miteksystems.misnap.databinding.FaceSettingsBinding
-import com.miteksystems.misnap.databinding.FaceWorkflowSettingsBinding
-import com.miteksystems.misnap.databinding.FragmentSettingsRootBinding
-import com.miteksystems.misnap.databinding.GeneralSettingsBinding
-import com.miteksystems.misnap.databinding.NfcSettingsBinding
-import com.miteksystems.misnap.databinding.NfcWorkflowSettingsBinding
-import com.miteksystems.misnap.databinding.VoiceSettingsBinding
-import com.miteksystems.misnap.databinding.VoiceWorkflowSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.BarcodeSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.BarcodeWorkflowSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.CameraSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.DocumentSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.DocumentWorkflowSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.FaceSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.FaceWorkflowSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.FragmentSettingsRootBinding
+import com.miteksystems.misnap.sampleapp.databinding.GeneralSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.NfcSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.NfcWorkflowSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.VoiceSettingsBinding
+import com.miteksystems.misnap.sampleapp.databinding.VoiceWorkflowSettingsBinding
 import com.miteksystems.misnap.document.*
 import com.miteksystems.misnap.face.default
 import com.miteksystems.misnap.face.getMaxAngle
@@ -108,7 +108,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings_root) {
 
     private val voicePhrases by lazy {
         listOf(
-            *resources.getStringArray(R.array.misnapWorkflowVoicePhraseSelectionFragmentPhrases),
+            *resources.getStringArray(com.miteksystems.misnap.workflow.R.array.misnapWorkflowVoicePhraseSelectionFragmentPhrases),
             "Custom"
         )
     }
@@ -277,15 +277,15 @@ class SettingsFragment : Fragment(R.layout.fragment_settings_root) {
 
     private fun getPermissionRationaleTitle(permission: String) =
         when (permission) {
-            Manifest.permission.CAMERA -> R.string.misnapAppUtilCameraPermissionRationaleTitle
-            Manifest.permission.RECORD_AUDIO -> R.string.misnapAppUtilAudioRecordPermissionRationaleTitle
+            Manifest.permission.CAMERA -> com.miteksystems.misnap.apputil.R.string.misnapAppUtilCameraPermissionRationaleTitle
+            Manifest.permission.RECORD_AUDIO -> com.miteksystems.misnap.apputil.R.string.misnapAppUtilAudioRecordPermissionRationaleTitle
             else -> 0
         }
 
     private fun getPermissionRationaleMessage(permission: String) =
         when (permission) {
-            Manifest.permission.CAMERA -> R.string.misnapAppUtilCameraPermissionRationaleMessage
-            Manifest.permission.RECORD_AUDIO -> R.string.misnapAppUtilAudioRecordPermissionRationaleMessage
+            Manifest.permission.CAMERA -> com.miteksystems.misnap.apputil.R.string.misnapAppUtilCameraPermissionRationaleMessage
+            Manifest.permission.RECORD_AUDIO -> com.miteksystems.misnap.apputil.R.string.misnapAppUtilAudioRecordPermissionRationaleMessage
             else -> 0
         }
 
@@ -2232,7 +2232,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings_root) {
                 android.R.layout.simple_spinner_item,
                 voicePhrases
             ).apply {
-                setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item)
+                setDropDownViewResource(androidx.appcompat.R.layout.support_simple_spinner_dropdown_item)
             }
 
             //Phrase trigger spinner
@@ -2395,7 +2395,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings_root) {
 
                 is CameraUtil.CameraSupportResult.Error -> {
                     // This camera does not support auto or manual,
-                    displayError(R.string.misnapAppUtilCameraErrorMessage)
+                    displayError(com.miteksystems.misnap.apputil.R.string.misnapAppUtilCameraErrorMessage)
                 }
             }
         }
@@ -2412,7 +2412,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings_root) {
             MicrophoneUtil.findSupportedMicrophone(requireContext())
 
         if (supportedMicrophoneSupportResult is MicrophoneUtil.MicrophoneSupportResult.Error) {
-            displayError(R.string.misnapAppUtilMicrophoneErrorMessage)
+            displayError(com.miteksystems.misnap.apputil.R.string.misnapAppUtilMicrophoneErrorMessage)
         }
     }
 
@@ -2440,26 +2440,27 @@ class SettingsFragment : Fragment(R.layout.fragment_settings_root) {
             "UseCaseSpinnerLastSelectedIndex"
         private const val SHARED_PREFS_LAST_SELECTED_VOICE_FLOW_INDEX =
             "VoiceFlowSpinnerLastSelectedIndex"
-        private const val CAMERA_TAB_TITLE_RES = R.string.misnapSampleAppSettingsCameraTabTitle
-        private const val DOCUMENT_TAB_TITLE_RES =
+        @SuppressLint("NonConstantResourceId")
+        private  val CAMERA_TAB_TITLE_RES = R.string.misnapSampleAppSettingsCameraTabTitle
+        private  val DOCUMENT_TAB_TITLE_RES =
             R.string.misnapSampleAppSettingsDocumentTabTitle
-        private const val BARCODE_TAB_TITLE_RES =
+        private  val BARCODE_TAB_TITLE_RES =
             R.string.misnapSampleAppSettingsBarcodeTabTitle
-        private const val FACE_TAB_TITLE_RES = R.string.misnapSampleAppSettingsFaceTabTitle
-        private const val NFC_TAB_TITLE_RES = R.string.misnapSampleAppSettingsNfcTabTitle
-        private const val WORKFLOW_TAB_TITLE_RES =
+        private  val FACE_TAB_TITLE_RES = R.string.misnapSampleAppSettingsFaceTabTitle
+        private  val NFC_TAB_TITLE_RES = R.string.misnapSampleAppSettingsNfcTabTitle
+        private  val WORKFLOW_TAB_TITLE_RES =
             R.string.misnapSampleAppSettingsWorkflowTabTitle
-        private const val VOICE_TAB_TITLE_RES = R.string.misnapSampleAppSettingsVoiceTabTitle
-        private const val DOCUMENT_ANALYSIS_FRAGMENT_LABEL_RES =
-            R.string.misnapWorkflowDocumentAnalysisFlowDocumentAnalysisFragmentLabel
-        private const val BARCODE_ANALYSIS_FRAGMENT_LABEL_RES =
-            R.string.misnapWorkflowBarcodeAnalysisFlowBarcodeAnalysisFragmentLabel
-        private const val FACE_ANALYSIS_FRAGMENT_LABEL_RES =
-            R.string.misnapWorkflowFaceAnalysisFlowFaceAnalysisFragmentLabel
-        private const val NFC_READER_FRAGMENT_LABEL_RES =
-            R.string.misnapWorkflowNfcReaderFlowNfcReaderFragmentLabel
-        private const val VOICE_ANALYSIS_FRAGMENT_LABEL_RES =
-            R.string.misnapWorkflowVoiceProcessorFlowVoiceProcessorFragmentLabel
+        private  val VOICE_TAB_TITLE_RES = R.string.misnapSampleAppSettingsVoiceTabTitle
+        private  val DOCUMENT_ANALYSIS_FRAGMENT_LABEL_RES =
+            com.miteksystems.misnap.workflow.R.string.misnapWorkflowDocumentAnalysisFlowDocumentAnalysisFragmentLabel
+        private  val BARCODE_ANALYSIS_FRAGMENT_LABEL_RES =
+            com.miteksystems.misnap.workflow.R.string.misnapWorkflowBarcodeAnalysisFlowBarcodeAnalysisFragmentLabel
+        private  val FACE_ANALYSIS_FRAGMENT_LABEL_RES =
+            com.miteksystems.misnap.workflow.R.string.misnapWorkflowFaceAnalysisFlowFaceAnalysisFragmentLabel
+        private  val NFC_READER_FRAGMENT_LABEL_RES =
+            com.miteksystems.misnap.workflow.R.string.misnapWorkflowNfcReaderFlowNfcReaderFragmentLabel
+        private  val VOICE_ANALYSIS_FRAGMENT_LABEL_RES =
+            com.miteksystems.misnap.workflow.R.string.misnapWorkflowVoiceProcessorFlowVoiceProcessorFragmentLabel
 
         //Bit flags
         private const val PERMISSION_REQUEST_CAMERA = 1

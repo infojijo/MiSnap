@@ -8,7 +8,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.miteksystems.misnap.core.MiSnapSettings
-import com.miteksystems.misnap.databinding.ExampleFragmentTransactionBinding
+import com.miteksystems.misnap.sampleapp.databinding.ExampleFragmentTransactionBinding
 import com.miteksystems.misnap.workflow.MiSnapErrorResult
 import com.miteksystems.misnap.workflow.MiSnapFinalResult
 import com.miteksystems.misnap.workflow.MiSnapWorkflowError

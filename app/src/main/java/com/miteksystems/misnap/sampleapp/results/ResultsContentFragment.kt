@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.SimpleOnPageChangeListener
-import com.miteksystems.misnap.R
 import com.miteksystems.misnap.apputil.ViewPageAdapter
 import com.miteksystems.misnap.apputil.util.ViewUtil
 import com.miteksystems.misnap.apputil.view.MiSnapAudioView
@@ -21,6 +20,7 @@ import com.miteksystems.misnap.apputil.databinding.FragmentResultContentBinding
 import com.miteksystems.misnap.apputil.util.ResultsUtil
 import com.miteksystems.misnap.nfc.MiSnapNfcReader
 import com.miteksystems.misnap.nfc.MiSnapNfcReader.ChipData.AuthenticationData
+import com.miteksystems.misnap.apputil.R // Import R class from app-util
 import com.miteksystems.misnap.voice.AudioUtil
 import com.miteksystems.misnap.workflow.MiSnapFinalResult
 import com.miteksystems.misnap.workflow.MiSnapWorkflowStep

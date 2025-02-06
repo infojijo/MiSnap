@@ -9,7 +9,7 @@ import com.miteksystems.misnap.R
 import com.miteksystems.misnap.core.MiSnapSettings
 import com.miteksystems.misnap.core.serverconnection.MiPassVerifyRequest
 import com.miteksystems.misnap.core.serverconnection.MiSnapTransactionResult
-import com.miteksystems.misnap.databinding.ExampleActivityIntegrationBinding
+import com.miteksystems.misnap.sampleapp.databinding.ExampleActivityIntegrationBinding
 import com.miteksystems.misnap.workflow.MiSnapFinalResult
 import com.miteksystems.misnap.workflow.MiSnapWorkflowActivity
 import com.miteksystems.misnap.workflow.MiSnapWorkflowStep
